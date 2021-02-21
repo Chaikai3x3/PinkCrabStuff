@@ -16,37 +16,59 @@
     <!-- STARTS HERE -->
     
     <style>
-        .filter-row {
+        
+
+        .field-group__grid {
             width: 100%;
-            margin: 0 auto;
-            
-        }
-
-        .filter-field {
-            width: 20%;
-            height: 100px;
-            float: left;
             background-color: #ffffff;                              
-            display: flex;
-            justify-content: space-around;         
-
-
+            display: inline-flex;  
+        }   
+        .sam {
+            position: relative;
+            width: 20%;
+            box-sizing: border-box;
+            margin: 0;
         }
+        .dam {
+            position: relative;
+            width: 20%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .fam {
+            position: relative;
+            width: 20%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .gam {
+            position: relative;
+            width: 20%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .ham {
+            position: relative;
+            width: 20%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
 
         .button {
+            border-style: outset;
+            display: inline-block;
             width: 100px;
             height: 40px;
-            background-color: #babfcc;            
+            background-color: #babfcc;      
             color: white;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
 
         }
         #pc_admin_layout table {
-            width: 80%;
+            width: 100%;
             background-color: #f3cad9;
-            margin-left: 10%;
             
         }
 
@@ -96,7 +118,7 @@
         <div id="invman-stock-check-filters" class="filter-row">
             <form action="" method="get">
                 <div class="field-group__grid">
-                    <div class="filter-field select">
+                    <div class="filter-field select sam">
                         <label><span>Stock Check Status</span>
                             <br>
                         <select name="status[]" multiple="multiple" class="select2" style="width: 100%">
@@ -109,7 +131,7 @@
                     </label>
                     </div>
     
-                    <div class="filter-field select">
+                    <div class="filter-field select dam">
                         <label><span>Users</span>
                             <br>
                         <select name="users[]" multiple="multiple" class="select2" style="width: 100%">
@@ -119,7 +141,7 @@
                         </label>
                     </div>
     
-                    <div class="filter-field">
+                    <div class="filter-field fam">
                         <label><span>Start Date</span>
                             <br>
                         <input 
@@ -130,7 +152,7 @@
                     </label>
                     </div>
     
-                    <div class="filter-field">
+                    <div class="filter-field gam">
                         <label><span>End Date</span>
                             <br>
                         <input 
@@ -140,8 +162,8 @@
                         >
                     </label>
                     </div>
-                    <div class="filter-field button-field">
-                        <button class="button" type="submit" style="height: 30px">Search</button>
+                    <div class="filter-field button-field ham">
+                        <button class="button" type="submit" >Search</button>
                         <a class="button" href="#">New</a>
                     </div>
     
